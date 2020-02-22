@@ -1,5 +1,10 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+    <div id="parametersRace">
+        <v-app-bar color="#2a2a2e" dark>
+            <v-toolbar-title>{{ $t("parameters.race.title")}}</v-toolbar-title>
+        </v-app-bar>
+        <v-content>
+            Hello world!
+        </v-content>
+    </div>
 </template>

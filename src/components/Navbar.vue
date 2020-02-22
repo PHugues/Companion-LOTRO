@@ -5,6 +5,7 @@
         :collapsed="collapsed"
         :show-one-child="true"
         @toggle-collapse="onToggleCollapse"
+        @item-click="onItemClick"
       />
 </template>
 
@@ -14,30 +15,30 @@ export default {
         return {
             menu: [{
                 header: true,
-                title: 'LOTRO',
+                title: this.$t('navbar.title'),
                 hiddenOnCollapse: true
             },
             {
                 href: '/',
-                title: 'Home',
+                title: this.$t('navbar.home'),
                 icon: 'fa fa-home'
             },
             {
                 href: '/characters',
-                title: 'Characters',
+                title: this.$t('navbar.characters'),
                 icon: 'fa fa-list'
             },
             {
-                title: 'Parameters',
+                title: this.$t('navbar.parameters'),
                 icon: 'fa fa-cog',
                 child: [
                     {
                         href: '/parameters/race',
-                        title: 'Race',
+                        title: this.$t('navbar.race'),
                     },
                     {
                         href: '/parameters/class',
-                        title: 'Class',
+                        title: this.$t('navbar.class'),
                     }
                 ]
             }],
@@ -47,14 +48,17 @@ export default {
     methods: {
         onToggleCollapse(collapsed) {
             this.$emit("toggle-collapse", collapsed);
-        }
+        },
+        onItemClick() {
+            // Do nothing
+        },
     },
     props: {
         collapsed: {
             type: Boolean,
             default: false
         },
-    }
+    },
 }
 
 </script>

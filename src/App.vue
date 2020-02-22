@@ -4,9 +4,9 @@
             :collapsed="collapsed"
             @toggle-collapse="onToggleCollapse"
         />
-        <div id="content" :class="[{'collapsed' : collapsed}]">
+        <v-app id="content" :class="[{'collapsed' : collapsed}]">
             <router-view/>
-        </div>
+        </v-app>
     </div>
 </template>
 

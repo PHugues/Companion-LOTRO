@@ -1,0 +1,23 @@
+html {
+    overflow-y: auto !important;
+}
+
+.v-sidebar-menu .vsm--header {
+    font-size: 3em !important;
+}
+
+.v-application--wrap {
+    min-height: 98vh !important;
+}
+
+header.v-app-bar {
+    left: 350px !important;
+}
+
+.v-toolbar__title {
+    font-size: 2em !important;
+}
+
+.clickable-row {
+    cursor: pointer;
+}

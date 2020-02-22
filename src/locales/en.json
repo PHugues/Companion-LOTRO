@@ -1,0 +1,16 @@
+{
+  "message": "hello i18n !!",
+  "navbar": {
+    "title": "LOTRO Companion App",
+    "parameters": "Parameters",
+    "home": "Home",
+    "characters": "My Characters",
+    "race": "Races",
+    "class": "Classes"
+  },
+  "parameters": {
+    "race": {
+      "title": "Races"
+    }
+  }
+}
