@@ -9,6 +9,13 @@ module.exports = {
       fallbackLocale: 'en',
       localeDir: 'locales',
       enableInSFC: true
+    },
+    electronBuilder: {
+      builderOptions: {
+        win: {
+          icon: './public/favicon.ico'
+        }
+      }
     }
   }
 }

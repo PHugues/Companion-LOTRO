@@ -1,14 +1,9 @@
 'use strict'
 
-import {
-    app,
-    protocol,
-    BrowserWindow
-} from 'electron'
-import {
-    createProtocol,
-    /* installVueDevtools */
-} from 'vue-cli-plugin-electron-builder/lib'
+import { app, protocol, BrowserWindow } from 'electron'
+import { createProtocol, /* installVueDevtools */ } from 'vue-cli-plugin-electron-builder/lib'
+import path from 'path'
+
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -31,7 +26,8 @@ function createWindow() {
         height: 720,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        icon: path.join(__static, 'icon.png')
     });
 
     win.setMenuBarVisibility(false);
